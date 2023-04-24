@@ -25,7 +25,7 @@ export default function ImagePage() {
             style={{
                 width:"192px", 
                 height: "192px", 
-                backgroundImage: `url("/logo192.png")`
+                backgroundImage: `url("${process.env.PUBLIC_URL}/logo192.png")`
                 }}>
             </div>
             <p>style 백그라운드 이미지 확인 : public에서 들고온 값</p>
@@ -35,7 +35,8 @@ export default function ImagePage() {
             style={{
                 width:"192px", 
                 height: "192px", 
-                backgroundImage: `url(${logo})`
+                backgroundImage: `url(${logo})`,
+                backgroundRepeat: "no-repeat"
                 }}>
             </div>
             <p>style 백그라운드 이미지 확인 : src에서 들고온 값</p>
