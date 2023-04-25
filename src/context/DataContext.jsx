@@ -41,7 +41,7 @@ const DataProvider = ({children}) => {
 
     // user값을 사용하기 위해 useState() 작성
     const [user, setUser] = useState(
-        {writer: "익명", login: false}
+        {writer: "green", login: true}
     )
 
     // commentlist 값 저장

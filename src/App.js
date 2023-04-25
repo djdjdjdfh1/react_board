@@ -9,6 +9,7 @@ import BoardWriteForm from './page/BoardWriteForm';
 import BoardModifyForm from './page/BoardModifyForm';
 import LoginForm from './page/LoginForm';
 import ImagePage from './page/ImagePage';
+import Mypage from './page/Mypage';
 
 import {DataProvider} from './context/DataContext';
 
@@ -27,6 +28,8 @@ function App() {
             <Route path='/loginform' element={<LoginForm />}/>
 
             <Route path='/image' element={<ImagePage />}/>
+
+            <Route path='/mypage' element={<Mypage />} />
           </Route>
         </Routes>
       </DataProvider>
