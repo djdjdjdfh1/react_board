@@ -41,7 +41,11 @@ const DataProvider = ({children}) => {
 
     // user값을 사용하기 위해 useState() 작성
     const [user, setUser] = useState(
-        {writer: "green", login: true}
+        {
+            writer: "green", 
+            login: true, 
+            profile: require('../img/dog.jpg')
+        }
     )
 
     // commentlist 값 저장
